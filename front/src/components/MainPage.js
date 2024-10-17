@@ -39,11 +39,14 @@ const MainPage = () => {
   return (
     <Layout>
       <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
-        <div className="logo" />
+        <div className="logo">
+            <img src='../img/logo.png' alt='Логотип' style={{ height: '50px' }} />
+        </div>
         <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
           <Menu.Item key="1">Главная</Menu.Item>
           <Menu.Item key="2">Каталог</Menu.Item>
-          <Menu.Item key="3">Контакты</Menu.Item>
+          <Menu.Item key="3">Собери букетик</Menu.Item>
+          <Menu.Item key="4">Контакты</Menu.Item>
         </Menu>
       </Header>
       <Content style={{ padding: '50px', marginTop: 64 }}>
